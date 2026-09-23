@@ -19,6 +19,9 @@ Snapshot taken 23 Sep 2026 from every repo on the `mailadisin-hub` account (plus
 | 9 | **VORTEX agency site** | One-page creative-agency template | Single HTML file | Done (template) | 1 |
 | 10 | **Physics-A-level** | (private) | — | **Empty repo** | 0 |
 | 11 | **Furthermath-A-level** | (private) | — | **Empty repo** | 0 |
+| 12 | **DIY RK-87 condenser mic** | 3D-printed silver U87-style studio mic | Hardware: RK-87 capsule, condenser board, PETG body (Fusion 360) | Parts list and design plan done (Drive, Sep 2026); not built | — |
+
+Sources: GitHub repos, plus project notes found in Google Drive. The Obsidian vault itself is stored locally and wasn't reachable. Work-placement notes are kept off this public wall on purpose.
 
 **Themes across the wall:**
 - **Education (6 of 9 real projects):** tuition portal, kids' quizzes, 11+ vocab, A-level tracking, revision dashboard. This is the core area.
@@ -177,6 +180,26 @@ Both private repos are **completely empty** (no commits). Either delete them, or
 
 ---
 
+### 12. DIY RK-87 condenser mic (hardware)
+**What it is:** A planned studio mic in U87 style. It uses a 34mm RK-87 dual-diaphragm capsule, a condenser board that supplies the capsule's polarising voltage, and a two-part PETG body printed from Fusion 360. The body is lined with copper foil and grounded to XLR pin 1, the grille is a two-layer metal mesh, and it's finished in chrome spray or silver vinyl. It runs through a Behringer UMC22 interface. The plan has a full parts list with price ranges, body dimensions, a cardioid wiring table and a pre-power-up checklist.
+
+**Strengths**
+- The plan gets the classic DIY mistake right: a true condenser capsule won't work on a cheap BM-800-style electret board. It also includes a test for this (measure about 60V at the backplate before fitting the capsule).
+- Shielding is treated as essential (foil lining, a bonded ground point, under 1Ω continuity). Skipping it is the main reason printed mic bodies hum.
+- The wiring deliberately swaps pins 2 and 3 because these boards ship with inverted polarity. The plan also says never to use threadlocker near the capsule. Both are details a first build usually misses.
+
+**Gaps and risks**
+- **Over budget:** the sheet itself shows £81–127 for the core parts against a £70 target. The UMC22 (£30) is the easiest saving if you can borrow an interface.
+- Whether the board really supplies polarising voltage is still "confirm with seller". Until the 60V test passes, the whole build depends on it. Order the board first and test it before buying the capsule.
+- Cheap 34mm clone capsules vary a lot in quality. The plan's "ask for photos, avoid wrinkled diaphragms" advice is right; budget for a second capsule too.
+- The OPA Alice upgrade note is uncertain: that board is aimed at electret capsules, so check that it can supply bias voltage before buying.
+
+**Market context:** a finished Chinese U87 clone (for example the Neumann TLM-style budget mics) or a used AT2020 costs roughly the same. The real value here is learning plus a mic that looks unique. Documenting the build (photos, frequency-response tests against a reference mic) would make a strong engineering portfolio piece.
+
+**Next moves:** order the board, run the 60V test, then buy the capsule. Print a test saddle once the capsule arrives and measure it. Record a sweep test against a known mic and publish the build log.
+
+---
+
 ## Suggested priority order
 
 1. 🔴 Work through the private security notes (live sites first).
@@ -187,3 +210,4 @@ Both private repos are **completely empty** (no commits). Either delete them, or
 6. 🟡 Turn Vocab Weekly into the Masterminds lead magnet.
 7. 🟢 Trendzation: SCG case studies, named tunnel.
 8. 🟢 Reels Blocker: resource-ID detection, disclosure screen.
+9. 🟢 Mic build: buy and test the board before the capsule; write up the build log.
