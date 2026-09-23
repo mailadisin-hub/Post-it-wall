@@ -194,7 +194,7 @@ Both private repos are **completely empty** (no commits). Either delete them, or
 - Cheap 34mm clone capsules vary a lot in quality. The plan's "ask for photos, avoid wrinkled diaphragms" advice is right; budget for a second capsule too.
 - The OPA Alice upgrade note is uncertain: that board is aimed at electret capsules, so check that it can supply bias voltage before buying.
 
-**Market context:** a finished Chinese U87 clone (for example the Neumann TLM-style budget mics) or a used AT2020 costs roughly the same. The real value here is learning plus a mic that looks unique. Documenting the build (photos, frequency-response tests against a reference mic) would make a strong engineering portfolio piece.
+**Market context:** a finished budget large-diaphragm condenser (a new or used Audio-Technica AT2020, or a cheap U87-style clone) costs roughly the same. The real value here is learning plus a mic that looks unique. Documenting the build (photos, frequency-response tests against a reference mic) would make a strong engineering portfolio piece.
 
 **Next moves:** order the board, run the 60V test, then buy the capsule. Print a test saddle once the capsule arrives and measure it. Record a sweep test against a known mic and publish the build log.
 
